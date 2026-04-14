@@ -1,0 +1,6 @@
+ternary-quant>=0.1.6
+torch>=2.1.0
+transformers>=4.46.0
+accelerate>=0.28.0
+gradio>=4.0.0
+pillow
