@@ -1,0 +1,39 @@
+name: Model Request
+description: Request a model to be ternary-quantized and added to the collection
+title: "[Model Request] "
+labels: ["model-request"]
+body:
+  - type: input
+    id: model_id
+    attributes:
+      label: HuggingFace Model ID
+      description: The full model ID on HuggingFace
+      placeholder: "e.g. google/gemma-4-31B-it"
+    validations:
+      required: true
+  - type: dropdown
+    id: model_type
+    attributes:
+      label: Model Type
+      options:
+        - Vision-Language Model (VLM)
+        - Audio / Speech Model
+        - Multimodal (any-to-any)
+        - Text-only LLM
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this model?
+      description: Brief explanation of why this model would be a good addition
+      placeholder: "This model is trending on HuggingFace and has no quantized variant available..."
+  - type: checkboxes
+    id: compatibility
+    attributes:
+      label: Compatibility check
+      description: Have you checked if this model is compatible?
+      options:
+        - label: "I ran `ternary-quant check <model-id>` and it passed"
+        - label: "The model uses a standard HuggingFace architecture (no trust_remote_code)"
