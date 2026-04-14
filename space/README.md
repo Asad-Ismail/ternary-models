@@ -1,6 +1,6 @@
 ---
 title: Ternary Model Playground
-emoji: "3"
+emoji: "\u26A1"
 colorFrom: purple
 colorTo: blue
 sdk: gradio
