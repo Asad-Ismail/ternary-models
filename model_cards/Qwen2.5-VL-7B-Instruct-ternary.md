@@ -29,12 +29,11 @@ capability that GGUF quantization cannot provide for VLM architectures.
 | Metric | Value |
 |--------|-------|
 | **Scheme** | tritplane3 (3-plane progressive ternary) |
-| **Components quantized** | text_backbone, multimodal_connector |
+| **Components quantized** | text_backbone, multimodal_connector (196 linear layers) |
 | **Vision encoder** | Kept in FP16 |
-| **Group size** | 32 |
-| **Calibration iterations** | 10 |
-| **Full-model effective bits** | *TBD* |
-| **Compression ratio** | *TBD* |
+| **Stored size** | 7341 MB (~7.2 GB) |
+| **FP16 size** | 13051 MB (~12.7 GB) |
+| **Compression ratio** | 1.8x |
 
 ## Usage
 
