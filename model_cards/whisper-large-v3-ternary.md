@@ -126,11 +126,12 @@ preserved in FP16 for maximum transcription quality.
 
 | Metric | Value |
 |--------|-------|
-| **Scheme** | tritplane3 |
-| **Components quantized** | decoder |
-| **Audio encoder** | Kept in FP16 |
-| **Full-model effective bits** | *TBD* |
-| **Compression ratio** | *TBD* |
+| **Scheme** | tritplane3 (3-plane progressive ternary) |
+| **Components quantized** | decoder (320 linear layers) |
+| **Audio encoder** | Kept in FP16 (preserving audio understanding quality) |
+| **Stored size** | 943.7 MB |
+| **FP16 size** | 1677.7 MB |
+| **Compression ratio** | 1.8x |
 
 ## Usage
 

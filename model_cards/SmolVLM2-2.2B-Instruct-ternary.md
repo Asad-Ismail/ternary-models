@@ -27,11 +27,13 @@ ternary-quantized version pushes it even further — making it feasible for mobi
 
 | Metric | Value |
 |--------|-------|
-| **Scheme** | tritplane3 |
-| **Components quantized** | text_backbone, multimodal_connector |
+| **Scheme** | tritplane3 (3-plane progressive ternary) |
+| **Components quantized** | text_backbone, multimodal_connector (169 linear layers) |
 | **Vision encoder** | Kept in FP16 |
-| **Full-model effective bits** | *TBD* |
-| **Compression ratio** | *TBD* |
+| **Full-model effective bits** | 10.92 |
+| **Compression ratio** | 1.47x |
+| **Avg reconstruction error** | 0.1236 |
+| **Validation** | Passed (correctly describes demo image) |
 
 ## Usage
 
