@@ -16,14 +16,12 @@ ternary-quant handles this natively:
 
 ## Models
 
-| Model | Type | Params | FP16 Size | Ternary Size | Compression | Quality | HuggingFace |
+| Model | Type | Params | FP16 Size | Ternary Size | Compression | Modules | HuggingFace |
 |-------|------|--------|-----------|-------------|-------------|---------|-------------|
-| [Gemma 4-E4B-it](https://huggingface.co/AsadIsmail/gemma-4-E4B-it-ternary) | VLM (any-to-any) | 8B | ~16 GB | TBD | TBD | TBD | [link](https://huggingface.co/AsadIsmail/gemma-4-E4B-it-ternary) |
-| [Qwen2.5-VL-7B](https://huggingface.co/AsadIsmail/Qwen2.5-VL-7B-Instruct-ternary) | VLM | 7.6B | ~15 GB | TBD | TBD | TBD | [link](https://huggingface.co/AsadIsmail/Qwen2.5-VL-7B-Instruct-ternary) |
-| [SmolVLM2-2.2B](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) | VLM | 2.2B | ~4.4 GB | TBD | TBD | TBD | [link](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) |
-| [Whisper-large-v3](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) | Speech-to-Text | 1.5B | ~3 GB | TBD | TBD | TBD | [link](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) |
-
-*Benchmarks updated as models complete quantization.*
+| [Gemma 4-E4B-it](https://huggingface.co/AsadIsmail/gemma-4-E4B-it-ternary) | VLM (multimodal) | 8B | ~16 GB | 4.2 GB | 3.8x | 342 layers | [link](https://huggingface.co/AsadIsmail/gemma-4-E4B-it-ternary) |
+| [Qwen2.5-VL-7B](https://huggingface.co/AsadIsmail/Qwen2.5-VL-7B-Instruct-ternary) | VLM | 7.6B | ~15 GB | *quantizing* | — | — | [link](https://huggingface.co/AsadIsmail/Qwen2.5-VL-7B-Instruct-ternary) |
+| [SmolVLM2-2.2B](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) | VLM | 2.2B | ~4.4 GB | — | 1.47x | 169 layers | [link](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) |
+| [Whisper-large-v3](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) | Speech-to-Text | 1.5B | ~3 GB | 944 MB | 1.8x | 320 layers | [link](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) |
 
 ## Quick start
 

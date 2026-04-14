@@ -31,13 +31,13 @@ and GPTQ cannot do for vision-language architectures.
 | Metric | Value |
 |--------|-------|
 | **Scheme** | tritplane3 (3-plane progressive ternary) |
-| **Components quantized** | text_backbone, multimodal_connector |
+| **Components quantized** | text_backbone, multimodal_connector (342 linear layers) |
 | **Vision encoder** | Kept in FP16 (preserving image understanding quality) |
 | **Group size** | 32 |
 | **Calibration iterations** | 10 |
-| **Full-model effective bits** | *TBD after quantization* |
-| **Compression ratio** | *TBD* |
-| **Avg reconstruction error** | *TBD* |
+| **Stored size** | 4234 MB (~4.2 GB) |
+| **FP16 size** | ~16 GB |
+| **Compression ratio** | ~3.8x |
 
 ## Usage
 
