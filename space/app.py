@@ -44,9 +44,9 @@ def load_vlm(model_id: str):
 
 
 MODELS = {
+    "SmolVLM2-2.2B (compact, recommended for free Spaces)": "AsadIsmail/SmolVLM2-2.2B-Instruct-ternary",
     "Gemma 4-E4B (any-to-any multimodal, 8B)": "AsadIsmail/gemma-4-E4B-it-ternary",
     "Qwen2.5-VL-7B": "AsadIsmail/Qwen2.5-VL-7B-Instruct-ternary",
-    "SmolVLM2-2.2B (compact)": "AsadIsmail/SmolVLM2-2.2B-Instruct-ternary",
 }
 
 
