@@ -141,14 +141,17 @@ import torch
 
 model, processor = load_ternary_model(
     "AsadIsmail/whisper-large-v3-ternary",
-    runtime_mode="cached"
+    runtime_mode="cached",
+    device="cpu"
 )
+# Important: cast to float32 to match encoder conv1d dtype
+model = model.float()
 
 # Transcribe audio
 import librosa
 audio, sr = librosa.load("audio.mp3", sr=16000)
 inputs = processor(audio, sampling_rate=16000, return_tensors="pt")
-inputs = {k: v.to(model.device) for k, v in inputs.items()}
+inputs = {k: v.to("cpu").float() for k, v in inputs.items()}
 
 with torch.no_grad():
     predicted_ids = model.generate(**inputs)
