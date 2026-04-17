@@ -23,6 +23,10 @@ ternary-quant handles this natively:
 | [SmolVLM2-2.2B](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) | VLM | 2.2B | ~4.4 GB | — | 1.47x | 169 layers | [link](https://huggingface.co/AsadIsmail/SmolVLM2-2.2B-Instruct-ternary) |
 | [Gemma 4-31B-it](https://huggingface.co/AsadIsmail/gemma-4-31B-it-ternary) | VLM (multimodal) | 31B | ~62.6 GB | 31 GB | 2x | 410 layers | [link](https://huggingface.co/AsadIsmail/gemma-4-31B-it-ternary) |
 | [Whisper-large-v3](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) | Speech-to-Text | 1.5B | ~3 GB | 944 MB | 1.8x | 320 layers | [link](https://huggingface.co/AsadIsmail/whisper-large-v3-ternary) |
+| [CogVideoX-2B](https://huggingface.co/AsadIsmail/CogVideoX-2b-ternary) | Text-to-Video (DiT) | 1.69B | ~3.4 GB | ~1.7 GB* | 2x (theoretical) | 245 layers | [link](https://huggingface.co/AsadIsmail/CogVideoX-2b-ternary) |
+| [CogVideoX-5B](https://huggingface.co/AsadIsmail/CogVideoX-5b-ternary) | Text-to-Video (DiT) | 5.57B | ~11.1 GB | ~5.6 GB* | 2x (theoretical) | 341 layers | [link](https://huggingface.co/AsadIsmail/CogVideoX-5b-ternary) |
+
+\* Video DiTs use "store as FP16 dequantized" format for diffusers compatibility. Theoretical size with packed ternary format.
 
 ## Quick start
 
