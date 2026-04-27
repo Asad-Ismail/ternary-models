@@ -112,10 +112,11 @@ with gr.Blocks(title="Ternary Model Playground", theme=gr.themes.Soft()) as demo
         """
         # Ternary Model Playground
 
-        Interactive demo for **ternary-quantized multimodal models** — VLMs that GGUF can't quantize.
+        Interactive demo for **ternary-quantized multimodal models** using a HuggingFace-native PTQ workflow.
 
         These models are quantized with [ternary-quant](https://github.com/Asad-Ismail/ternary-quant)
-        using component-aware tritplane3 quantization, retaining 95-99% of original quality.
+        using component-aware tritplane3 quantization. Quality retention is benchmark- and model-dependent;
+        see the linked model cards for validation details.
 
         **Collection**: [github.com/Asad-Ismail/ternary-models](https://github.com/Asad-Ismail/ternary-models)
         """

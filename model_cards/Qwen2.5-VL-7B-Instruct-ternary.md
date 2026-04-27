@@ -21,8 +21,8 @@ Ternary-quantized version of [Qwen/Qwen2.5-VL-7B-Instruct](https://huggingface.c
 produced with [ternary-quant](https://github.com/Asad-Ismail/ternary-quant).
 
 Qwen2.5-VL is one of the most capable open-weight vision-language models. This ternary-quantized
-version makes it accessible on consumer hardware while preserving multimodal understanding — a
-capability that GGUF quantization cannot provide for VLM architectures.
+version targets lower memory use while preserving multimodal behavior in a HuggingFace-native,
+component-aware PTQ workflow.
 
 ## Quantization details
 

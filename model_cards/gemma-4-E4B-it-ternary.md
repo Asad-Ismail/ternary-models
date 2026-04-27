@@ -20,11 +20,9 @@ license: gemma
 Ternary-quantized version of [google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it),
 produced with [ternary-quant](https://github.com/Asad-Ismail/ternary-quant).
 
-**This is the first publicly available ternary-quantized multimodal model on HuggingFace.**
-
 Gemma 4-E4B is Google's multimodal model that processes both images and text. This ternary-quantized
-version retains the multimodal capabilities while significantly reducing model size — something GGUF
-and GPTQ cannot do for vision-language architectures.
+version retains multimodal capabilities while reducing model size through a HuggingFace-native,
+component-aware PTQ workflow.
 
 ## Quantization details
 

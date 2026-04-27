@@ -118,9 +118,9 @@ license: apache-2.0
 Ternary-quantized version of [openai/whisper-large-v3](https://huggingface.co/openai/whisper-large-v3),
 produced with [ternary-quant](https://github.com/Asad-Ismail/ternary-quant).
 
-This demonstrates ternary-quant's unique capability to quantize **audio/speech models** — something
-GGUF and GPTQ were not designed for. The decoder is ternary-quantized while the audio encoder is
-preserved in FP16 for maximum transcription quality.
+This demonstrates ternary-quant's component-aware workflow for **audio/speech models**.
+The decoder is ternary-quantized while the audio encoder is preserved in FP16 for transcription
+quality. This is a HuggingFace-native PTQ artifact rather than a GGUF deployment artifact.
 
 ## Quantization details
 

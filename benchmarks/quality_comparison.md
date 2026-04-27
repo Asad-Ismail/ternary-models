@@ -13,9 +13,9 @@ Method: Greedy decoding, same prompts, chat template applied
 
 ## Conclusion
 
-Ternary quantization with tritplane3 produces **near-identical output to FP16** on Gemma 4-E4B-it.
-Same facts, same reasoning, same code structure. Only minor wording differences that are within
-normal generation variance.
+In this Gemma 4-E4B-it sample, ternary quantization with tritplane3 produced output close to the
+FP16 baseline: same facts, same reasoning, and same code structure, with minor wording differences
+within normal generation variance.
 
-The tradeoff: ~8-10 effective bits per weight (vs GGUF Q4's ~4.5 bits), but applied to VLM
-architectures that GGUF cannot quantize at all.
+The tradeoff: ~8-10 effective bits per weight (vs GGUF Q4's ~4.5 bits), but in a
+HuggingFace-native PTQ workflow that can selectively quantize VLM components.
